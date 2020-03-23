@@ -87,10 +87,7 @@
   selected: false
   packages:
     - font-manager-git
-    - galculator
     - flameshot
-    - plank
-    - arcolinux-plank-themes-git
     - screenkey-git
     - xfburn
 - name: "Calligra"
@@ -108,21 +105,8 @@
   selected: false
   packages:
     - atom
-    - code
-    - geany
     - geany-plugins
     - kdevelop
-- name: "Fonts"
-  description: "Fonts"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - terminus-font
-    - ttf-bitstream-vera
-    - ttf-fira-code
-    - ttf-inconsolata
-    - ttf-liberation
 - name: "Games"
   description: "Games"
   critical: false
@@ -143,7 +127,6 @@
     - gpick
     - inkscape
     - krita
-    - nitrogen
     - nomacs
     - pinta
     - ristretto
@@ -228,28 +211,6 @@
     - spotify
     - spotifywm-git
     - vlc
-- name: "Themes"
-  description: "Themes"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - adapta-gtk-theme
-    - arc-icon-theme
-    - arcolinux-arc-kde
-    - arcolinux-arc-themes-nico-git
-    - faba-icon-theme
-    - gnome-icon-theme
-    - moka-icon-theme
-    - numix-circle-arc-icons-git
-    - numix-circle-icon-theme-git
-    - numix-gtk-theme-git
-    - openbox-themes-pambudi-git
-    - oxy-neon
-    - paper-icon-theme
-    - papirus-icon-theme
-    - surfn-arc-breeze-icons-git
-    - xcursor-simpleandsoft
 - name: "Utilities"
   description: "Utilities"
   critical: false
