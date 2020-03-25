@@ -1,3 +1,11 @@
+- name: "VicyosLinux Conky"
+  description: "Conky for VicyosLinux Hibrid Herbstluftwm (Recommended)"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - vicyos-conky-orange-hlwm-1366x768p-git
+    - vicyos-conky-orange-hlwm-1920x1080p-git
 - name: "Linux kernel without any nvidia"
   description: "Installs only the latest linux kernel (not the one from iso)"
   critical: false
@@ -265,11 +273,3 @@
     - wps-office
     - wps-office-mime
     - ttf-wps-fonts
-- name: "VicyosLinux Conky"
-  description: "Conky for VicyosLinux Hibrid Herbstluftwm (Recommended)"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - vicyos-conky-orange-hlwm-1366x768p-git
-    - vicyos-conky-orange-hlwm-1920x1080p-git
