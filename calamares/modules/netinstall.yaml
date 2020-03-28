@@ -46,26 +46,13 @@
     - nvidia-lts
     - nvidia-settings
     - nvidia-utils
-- name: "Nvidia-390xx with linux kernel"
-  description: "Installs nvidia-390xx and linux kernel - check Arch wiki nvidia"
+- name: "Cuda toolkit"
+  description: "Installs the Cuda Toolkit"
   critical: false
   hidden: false
   selected: false
   packages:
-    - linux
-    - nvidia-390xx
-    - nvidia-390xx-settings
-    - nvidia-390xx-utils
-- name: "Nvidia-390xx with linux-lts kernel"
-  description: "Installs nvidia-390xx-lts and linux-lts kernel - check Arch wiki nvidia"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - linux-lts
-    - nvidia-390xx-lts
-    - nvidia-390xx-settings
-    - nvidia-390xx-utils
+    - cuda
 - name: "Intel-ucode"
   description: "Installs intel-ucode - see Arch wiki microcode"
   critical: false
@@ -86,34 +73,37 @@
   hidden: false
   selected: false
   packages:
-    - font-manager-git
+    - cheese
+    - galculator
     - flameshot
-    - screenkey-git
-    - xfburn
-- name: "Calligra"
-  description: "Office Suite"
+    - liferea
+    - mediainfo
+    - mcomix
+    - pdfarranger
+- name: "File Manager"
+  description: "Filemanager"
   critical: false
   hidden: false
   selected: false
   packages:
-    - calligra
-    - calligra-plan
-- name: "Development"
-  description: "Development"
+    - caja
+    - dolphin
+    - mc
+    - nautilus
+    - nemo
+    - nemo-fileroller
+    - pcmanfm
+    - ranger
+- name: "Git"
+  description: "Git"
   critical: false
   hidden: false
   selected: false
   packages:
-    - atom
-    - geany-plugins
-    - kdevelop
-- name: "Games"
-  description: "Games"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - arcolinux-meta-steam
+    - gitahead-bin
+    - gitg
+    - gitfiend
+    - gitkraken
 - name: "Graphics"
   description: "Graphics"
   critical: false
@@ -123,13 +113,8 @@
     - blender
     - darktable
     - digikam
-    - gimp
     - gpick
-    - inkscape
-    - krita
-    - nomacs
-    - pinta
-    - ristretto
+
 - name: "Fun"
   description: "Fun"
   critical: false
@@ -137,106 +122,42 @@
   selected: false
   packages:
     - arcolinux-meta-fun
-- name: "Internet"
-  description: "Internet"
+- name: "Password Manager"
+  description: "Password manager"
   critical: false
   hidden: false
   selected: false
   packages:
-    - brave
-    - chromium
-    - deluge
-    - discord
-    - dropbox
-    - evolution
-    - falkon
-    - filezilla
-    - firefox-i18n-$LOCALE
-    - geary
-    - hexchat
-    - insync
-    - ktorrent
-    - opera
-    - pidgin
-    - qbittorrent
-    - telegram-desktop
-    - thunderbird
-    - transmission-gtk
-    - vivaldi
-- name: "Libre Office Fresh"
-  description: "Installs libre office fresh - feature branch - conflicts with still"
+    - bitwarden-bin
+    - enpass-bin
+    - keepassxc
+    - lastpass
+- name: "Privacy"
+  description: "Applications that ensure your privacy"
   critical: false
   hidden: false
   selected: false
   packages:
-    - libreoffice-fresh
-    - libreoffice-fresh-$LOCALE
-    - hunspell-$LOCALE
-- name: "Libre Office Still"
-  description: "Installs libre office still - stable branch - conflicts with fresh"
+    - tor-browser
+    - tor
+    - privoxy
+- name: "Terminals"
+  description: "Terminals"
   critical: false
   hidden: false
   selected: false
   packages:
-    - libreoffice-still
-    - libreoffice-still-$LOCALE
-    - hunspell-$LOCALE
-- name: "Multimedia"
-  description: "Multimedia"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - ardour
-    - audacious
-    - audacity
-    - celluloid
-    - clementine
-    - deadbeef
-    - elisa
-    - guvcview
-    - handbrake
-    - kdenlive
-    - lollypop
-    - lmms
-    - obs-studio
-    - openshot
-    - mpv
-    - peek
-    - pragha
-    - rhythmbox
-    - simplescreenrecorder
-    - soundconverter
-    - smplayer
-    - spotify
-    - spotifywm-git
-    - vlc
-- name: "Utilities"
-  description: "Utilities"
-  critical: false
-  hidden: false
-  selected: false
-  packages:
-    - baobab
-    - catfish
-    - evince
-    - gitahead-bin
-    - gitfiend
-    - glances
-    - glxinfo
-    - grsync
-    - gtop
-    - gufw
-    - hddtemp
-    - lm_sensors
-    - open-vm-tools
-    - powertop
-    - simple-scan
-    - systemd-manager
-    - timeshift
-    - vnstat
-    - wttr
-    - youtube-dl
+    - alacritty
+    - gnome-terminal
+    - guake
+    - kitty
+    - konsole
+    - lxterminal
+    - sakura
+    - terminator
+    - tilix
+    - tilda
+    - tmux
 - name: "Virtualbox for Linux kernel"
   description: "Installs virtualbox for linux kernel"
   critical: false
@@ -256,6 +177,199 @@
     - virtualbox-host-dkms
     - linux-lts-headers
     - linux-lts
+- name: "Communication"
+  description: "Communication software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - arcolinux-teamviewer
+    - krdc
+    - qtox
+    - remmina
+    - riot-desktop
+    - skypeforlinux-stable-bin
+    - slack-desktop
+    - teams
+    - tigervnc
+    - viber
+    - wire-desktop
+    - zoom
+- name: "Development"
+  description: "Development software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - atom
+    - brackets-bin
+    - geany-plugins
+    - intellij-idea-community-edition
+    - kdevelop
+    - leafpad
+    - notepadqq
+    - openscad
+    - pycharm-community-edition
+    - name: "Games"
+  description: "Gaming software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - arcolinux-meta-steam
+    - armagetronad
+    - astromenace
+    - chromium-bsu
+    - extremetuxracer
+    - freeciv
+    - gnome-chess
+    - gnuchess
+    - hedgewars
+    - kbreakout
+    - knights
+    - lutris
+    - minecraft-launcher
+    - neverball
+    - playonlinux
+    - sauerbraten
+    - sauerbraten-data
+    - xonotic
+    - xonotic-data
+- name: "Internet"
+  description: "Internet software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - chromium
+    - brave
+    - deluge
+    - falkon
+    - firefox-adblock-plus
+    - firefox-i18n-$LOCALE
+    - hexchat
+    - insync
+    - ktorrent
+    - nextcloud-client
+    - opera
+    - pidgin
+    - qutebrowser
+    - thunderbird
+    - transmission-gtk
+    - vivaldi
+- name: "Multimedia"
+  description: "Audio and video software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - ardour
+    - audacious
+    - audacity
+    - celluloid
+    - deadbeef
+    - elisa
+    - handbrake
+    - juk
+    - kdenlive
+    - kodi
+    - kodi-addons
+    - lollypop
+    - lxmusic
+    - lmms
+    - obs-studio
+    - openshot
+    - mpc
+    - mpd
+    - mpv
+    - ncmpcpp
+    - plex-media-player
+    - plex-media-server
+    - pragha
+    - radiotray
+    - rhythmbox
+    - spotify
+    - spotifywm-git
+- name: "Abiword"
+  description: "Abiword"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - abiword
+- name: "Calibre"
+  description: "Calibre"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - calibre    
+- name: "Calligra"
+  description: "Office Suite"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - calligra
+    - calligra-plan
+- name: "Focuswriter"
+  description: "Focuswriter"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - focuswriter    
+- name: "Ghostwriter"
+  description: "Ghostwriter"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - ghostwriter
+- name: "Gnumeric"
+  description: "Gnumeric"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - gnumeric    
+- name: "Libre Office Fresh"
+  description: "Installs libre office fresh - feature branch - conflicts with still"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - libreoffice-fresh
+    - libreoffice-fresh-$LOCALE
+    - hunspell-$LOCALE
+- name: "Libre Office Still"
+  description: "Installs libre office still - stable branch - conflicts with fresh"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - libreoffice-still
+    - libreoffice-still-$LOCALE
+    - hunspell-$LOCALE
+- name: "Moneydance"
+  description: "Moneydance"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - moneydance    
+- name: "Scribus"
+  description: "Scribus"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - scribus
 - name: "WPS Office"
   description: "Installs wps office"
   critical: false
@@ -265,3 +379,23 @@
     - wps-office
     - wps-office-mime
     - ttf-wps-fonts
+- name: "Utilities"
+  description: "Utility software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - albert
+    - archey3
+    - bleachbit
+    - google-earth-pro
+    - kbackup
+    - open-vm-tools
+    - optimus-manager
+    - octopi
+    - putty
+    - synapse
+    - systemd-manager
+    - vnstat
+    - wireshark-qt
