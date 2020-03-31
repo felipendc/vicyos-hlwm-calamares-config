@@ -1,0 +1,23 @@
+- name: "Internet"
+  description: "Internet software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: true
+  packages:
+    - chromium
+    - brave
+    - deluge
+    - falkon
+    - firefox-adblock-plus
+    - firefox-i18n-$LOCALE
+    - hexchat
+    - insync
+    - ktorrent
+    - nextcloud-client
+    - opera
+    - pidgin
+    - qutebrowser
+    - thunderbird
+    - transmission-gtk
+    - vivaldi
