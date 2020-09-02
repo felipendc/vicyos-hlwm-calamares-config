@@ -34,7 +34,6 @@
   packages:
     - linux
     - nvidia
-    - nvidia-settings
     - nvidia-utils
 - name: "Nvidia-lts with linux-lts kernel"
   description: "Installs nvidia-lts and linux-lts kernel - check Arch wiki nvidia"
@@ -44,7 +43,6 @@
   packages:
     - linux-lts
     - nvidia-lts
-    - nvidia-settings
     - nvidia-utils
 - name: "Cuda toolkit"
   description: "Installs the Cuda Toolkit"
