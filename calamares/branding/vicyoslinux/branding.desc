@@ -122,17 +122,16 @@ navigation: widget
 # are set to "true" (they can also be overridden).
 strings:
     productName:         "@{NAME}"
-    shortProductName:    ArcoLinux
-    version:             3.0
-    shortVersion:        3.0
-    versionedName:       ArcoLinux
-    shortVersionedName:  ArcoLinux
-    bootloaderEntryName: ArcoLinux
-#    productUrl:          https://arcolinux.info/
-#    supportUrl:          https://arcolinuxforum.com/
-#    knownIssuesUrl:      https://arcolinux.info/
-#    releaseNotesUrl:     https://arcolinux.info/arcolinux-editions/
-#    donateUrl:           https://kde.org/community/donations/index.php
+    shortProductName:    VicyosLinux
+    version:             2.0
+    shortVersion:        2.0
+    versionedName:       "Vicyos Edition"
+    shortVersionedName:  "Vicyos Edition"
+    bootloaderEntryName: VicyosLinux
+#    productUrl:          https://ArcoLinux.info/
+#    supportUrl:          https://ArcoLinuxforum.com/
+#    knownIssuesUrl:      https://ArcoLinux.info/
+#    releaseNotesUrl:     https://ArcoLinux.info/ArcoLinux-editions/
 
 # These images are loaded from the branding module directory.
 #
@@ -217,5 +216,4 @@ slideshow:               "show.qml"
 #
 # An image slideshow does not need to have the API defined.
 slideshowAPI: 2
-
 
